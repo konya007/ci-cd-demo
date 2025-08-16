@@ -23,10 +23,12 @@ pipeline {
             when {
                 branch 'main2'
             }
+            environment {
+                VERCEL_TOKEN = credentials('vercel-token')
+            }
             steps {
-                // Thực hiện các bước deploy, ví dụ:
-                bat 'echo Deploying to production...'
-                // Thay bằng lệnh deploy thực tế của bạn, ví dụ copy file, chạy script, v.v.
+                bat 'npm install -g vercel'
+                bat 'vercel --prod --token %VERCEL_TOKEN%'
             }
         }
     }
