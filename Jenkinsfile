@@ -28,7 +28,7 @@ pipeline {
             }
             steps {
                 bat 'npm install -g vercel'
-                bat 'vercel --prod --token %VERCEL_TOKEN%'
+                bat 'npx vercel --prod --yes --token=%VERCEL_TOKEN%'
             }
         }
     }
