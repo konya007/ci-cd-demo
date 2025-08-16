@@ -13,7 +13,7 @@ pipeline {
         }
         stage('Build') {
             when {
-                branch 'main'
+                branch 'main2'
             }
             steps {
                 bat 'npm run build'
