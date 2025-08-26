@@ -3,10 +3,10 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   server: {
-    allowedHosts: ['konnn04.pythonanywhere.com']
+    allowedHosts: ['konnn04.pythonanywhere.com'],
   },
   plugins: [react()],
-  base: './',
+  base: '/ci-cd-demo/',
   test: {
     globals: true,
     environment: 'jsdom',
