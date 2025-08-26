@@ -6,7 +6,7 @@ export default defineConfig({
     allowedHosts: ['konnn04.pythonanywhere.com']
   },
   plugins: [react()],
-  base: './',
+  base: './ci-cd-demo/',
   test: {
     globals: true,
     environment: 'jsdom',
