@@ -12,7 +12,7 @@ if (!rootElement) {
 }
 createRoot(rootElement).render(
   <StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename='/ci-cd-demo'>
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/house/:id" element={<HouseDetailPage />} />
